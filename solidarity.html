@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projetos Solidários</title>
+        <link rel="stylesheet" href="./css/solidarity.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="detalhes/icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="./js/solidarity.js" defer></script>
+        <!--Fonte para os Ícones do botão de Alterar Tema aparecerem-->
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <header>
+            <div class="interface">
+                <a href="index.html" title="Página inicial">
+                    <img src="./detalhes/1.png">
+                </a>
+                <nav class="menu-desktop">
+                    <ul>
+                        <li class="outros">
+                            <a href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="outros">
+                            <a href="historic.html">Retrocesso histórico</a>
+                        </li>
+                        <li class="outros">
+                            <a href="governo.html">Ações governamentais</a>
+                        </li>
+                        <li class="outros">
+                            <a href="rj.html">A fome no Rio</a>
+                        </li>
+                        <li class="agora">
+                            <a title="Página atual">PROJETOS SOLIDÁRIOS</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <input type="checkbox" class="checkbox" id="chk"/>
+
+                <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+                </label>
+
+                <div class="btn-abrir">
+                    <i class="bi bi-list" id="btn-menu"></i>
+                </div>
+
+                <nav class="menu-mobile" id="menu-mobile">
+                    <div class="btn-fechar">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="index.html">Página Inicial</a>
+                        </li>
+                        <li>
+                            <a href="sobre.html">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="historic.html">Retrocesso histórico</a>
+                        </li>
+                        <li>
+                            <a href="governo.html">Ações governamentais</a>
+                        </li>
+                        <li>
+                            <a href="rj.html">A fome no Rio</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+
+            <section class="introdução">
+                <div class="interface">
+                    <div class="flex" id="img-cont">
+                        <div class="quadrado">
+                            <img id="imagem" src="detalhes/aperto-de-mao.png" alt="">
+                        </div>
+                        <div class="cont">
+                            <h1>PROJETOS SOLIDÁRIOS</h1>
+                            <p>As Organizações Não Governamentais (ONGs) dedicadas à insegurança alimentar desempenham um papel fundamental na luta contra a fome e na promoção da segurança alimentar em comunidades em todo o mundo. Essas organizações enfrentam desafios complexos e multifacetados, trabalhando incansavelmente para garantir que indivíduos e famílias tenham acesso a alimentos nutritivos e suficientes para atender às suas necessidades básicas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="relatos">
+                <div class="interface">
+                    <h1>RELATOS <span>REAIS.</span></h1>
+                    <div class="flex" id="flex-mobile">
+                        <i class="bi bi-caret-left-fill" onclick="moveSlide(-1)"></i>
+                        <div id="relatos">
+                            <p class="relato">"Sou moradora da maré, e já passei por tempos difíceis em minha vida. Durante uma fase de desemprego, me vi lutando para colocar comida na mesa para mim e meus filhos. As noites eram longas, não conseguia dormir imaginando como iria alimentar minha família no dia seguinte. Cada refeição se tornou uma batalha, e a sensação de fome era constante."</p>
+                            <p class="relato" style="display: none;">"Quando estavamos na pandemia passamos por situações muito difíceis, no auge da doença ficamos cerca de 2 meses sobrevivendo a base de mingal de fubá e salsicha, minha mãe tava sem emprego e meu pai tinha acabado de ser demitido e estavamos tentando processar a empresa por conta do pagamento."</p>
+                            <p class="relato" style="display: none;">"Hoje eu tenho uma vida mais estável, mas cresci em uma família pobre, onde cada refeição era uma batalha. Me lembro dos dias em que minha mãe sacrificava sua própria comida para garantir que meus irmãos e eu tivéssemos algo para comer"</p>
+                        </div>
+                        <i class="bi bi-caret-right-fill" onclick="moveSlide(1)"></i>
+                    </div>
+                    <div class="flex" id="indicador">
+                        <i class="bi bi-circle-fill active"></i>
+                        <i class="bi bi-circle-fill"></i>
+                        <i class="bi bi-circle-fill"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="frase-motivacional">
+                <marquee direction="left">A FOME NÃO ESPERA: DOE E CONTRIBUA POR UM PAÍS MELHOR.</marquee>
+            </section>
+            
+            <section class="cidadania">
+                <div class="interface">
+                    <h2 class="titulos">AÇÃO DA CIDADANIA</h2>
+                    <div class="grupos">
+                        <img src="img/acaoecidadania.jpeg" alt="Ação da Cidadania"> 
+                        <div class="frases">
+                            <p>A ONG Ação e Cidadania é uma organização sem fins lucrativos fundada em 1993 pelo sociólogo Herbert de Souza, conhecido como Betinho. Seu principal objetivo é combater a fome e a miséria no Brasil, promovendo ações de solidariedade e desenvolvimento social. Através de programas e projetos, a organização busca mobilizar a sociedade civil, empresas e governo para promover a inclusão social, a educação e o acesso à alimentação, visando construir uma sociedade mais justa e igualitária.</p>
+                            <button><a href="https://www.acaodacidadania.org.br/" target="_blank">Saiba Mais</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="banco">
+                <div class="interface">
+                    <h2 class="titulos">BANCO DE ALIMENTOS</h2>
+                    <div class="grupos">
+                        <div class="frases" id="frase2">
+                            <p>O Banco de Alimentos é uma ONG dedicada a combater o desperdício de alimentos e promover a segurança alimentar para comunidades em situação de vulnerabilidade. Sua atuação é multifacetada e abrange diversas atividades essenciais, a ONG se encarrega da coleta de alimentos excedentes, provenientes de doações de produtores, supermercados, restaurantes e outros estabelecimentos. Essa coleta visa resgatar alimentos que, de outra forma, seriam descartados, mas que ainda estão próprios para consumo.</p>
+                        </div>
+                        <img src="img/Banco-de-Alimentos.jpg" alt="Banco de Alimentos">
+                    </div>
+                    <button><a href="https://bancodealimentos.org.br/" target="_blank">Saiba Mais</a></button>
+                </div>
+            </section>  
+
+            <section class="sesc">        
+                <div class="interface">
+                    <h2 class="titulos">SESC MESA BRASIL</h2>
+                    <div class="grupos">
+                        <img src="img/sesc mesa brasil.jpg" alt="sesc">
+                        <div class="frases">
+                            <p>O Sesc Mesa Brasil é uma organização não governamental (ONG) que atua em todo o Brasil com o objetivo principal de combater o desperdício de alimentos e promover a segurança alimentar e nutricional. Fundada em 2003, a iniciativa é parte do Serviço Social do Comércio (Sesc), uma entidade privada sem fins lucrativos ligada ao Sistema Fecomércio. Além da redistribuição de alimentos, o Sesc Mesa Brasil também desenvolve ações educativas e de conscientização sobre segurança alimentar, nutrição e combate ao desperdício.</p>
+                        </div>
+                    </div>
+                    <button><a href="https://www.sesc.com.br/" target="_blank">Saiba Mais</a></button>
+                </div>
+            </section> 
+            
+            <section class="ongporamor">    
+                <div class="interface">
+                    <h2 class="titulos">ONG É POR AMOR</h2>
+                    <div class="grupos">
+                        <div class="frases" id="frase4">
+                            <p>A ONG É Por Amor é uma organização dedicada a promover o bem-estar e a igualdade, com foco especial em questões sociais e ambientais. Fundada em 2020, ela tem como missão principal criar um mundo mais justo e sustentável através de diversas iniciativas e projetos. Com uma abordagem holística, a ONG busca enfrentar desafios como a pobreza, a discriminação, a degradação ambiental e outros problemas que afetam comunidades vulneráveis.</p>
+                        </div>
+                        <img src="img/ong por amor.jpg" alt="amor">
+                    </div>
+                    <button><a href="https://www.eporamor.org.br/" target="_blank">Saiba Mais</a></button>
+                </div>
+            </section>   
+            
+            <section class="mare">      
+                <div class="interface">
+                    <h2 class="titulos">REDES DA MARÉ</h2>
+                    <div class="grupos">
+                        <img src="img/redes mare.jpg" alt="redes da mare">
+                        <div class="frases">
+                            <p>A ONG Redes da Maré é uma organização comprometida com o desenvolvimento social e a promoção da cidadania nas comunidades da Maré, no Rio de Janeiro. Fundada em 2007, sua missão é fortalecer os laços comunitários, combater a violência e promover oportunidades para os moradores dessa região historicamente desfavorecida. Por meio de parcerias com instituições locais, doações e recursos próprios, a Redes da Maré realiza a distribuição de alimentos para famílias em situação de vulnerabilidade.</p>
+                        </div>
+                    </div>
+                    <button class="button5"><a href="https://www.redesdamare.org.br/" target="_blank">Saiba Mais</a></button>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <div class="interface">
+                <div class="flex" id="flex-mobile">
+                    <nav class="menu-simplificado">
+                        <h2>Menu <span>----------</span></h2>
+                        <ul>
+                            <li>
+                                <a href="index.html">Página Inicial</a>
+                            </li>
+                            <li>
+                                <a href="sobre.html">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="historic.html">Retrocesso histórico</a>
+                            </li>
+                            <li>
+                                <a href="governo.html">Ações governamentais</a>
+                            </li>
+                            <li>
+                                <a href="rj.html">A fome no Rio</a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <nav class="ref">
+                        <h2>Links úteis <span>----------</span></h2>
+                        <ul>
+                            <li>
+                                <a href="https://propago.com.br/blog/a-importancia-das-ongs-na-sociedade/#:~:text=As%20ONGs%20Organiza%C3%A7%C3%B5es%20n%C3%A3o%20governamentais,ambientais%2C%20pessoas%20vulner%C3%A1veis%20e%20etc." target="_blank">A importância | Propago</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="slogan">
+                        <img src="detalhes/1.png" alt="">
+                        <h3>A REALIDADE CONTADA</h3>
+                    </div>
+                </div>
+    
+                <h4>© Copyright 2024 | Comida na Mesa</h4>
+    
+            </div>    
+        </footer>
+    </body>
+
+</html>

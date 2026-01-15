@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrocesso histórico</title>
+    <link rel="shortcut icon" href="detalhes/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/historic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+    <script src="./js/historic.js" defer></script>
+    <!--Fonte para os Ícones do botão de Alterar Tema aparecerem-->
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <a href="index.html" title="Página inicial">
+                <img src="./detalhes/1.png">
+            </a>
+            <nav class="menu-desktop">
+                <ul>
+                    <li class="outros">
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="agora">
+                        <a title="Página atual">RETROCESSO HISTÓRICO</a>
+                    </li>
+                    <li class="outros">
+                        <a href="governo.html">Ações governamentais</a>
+                    </li>
+                    <li class="outros">
+                        <a href="rj.html">A fome no Rio</a>
+                    </li>
+                    <li class="outros">
+                        <a href="solidarity.html">Projeto solidário</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <input type="checkbox" class="checkbox" id="chk"/>
+
+            <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+            </label>
+
+            <div class="btn-abrir">
+                <i class="bi bi-list" id="btn-menu"></i>
+            </div>
+
+            <nav class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html">Página Inicial</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="governo.html">Ações governamentais</a>
+                    </li>
+                    <li>
+                        <a href="rj.html">A fome no Rio</a>
+                    </li>
+                    <li>
+                        <a href="solidarity.html">Projeto solidário</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="tit">
+            <div class="interface">
+                <div class="flex">
+                    <h1>RETROCESSO <br> HISTÓRICO</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="hist">
+            <div class="interface">
+                <div class="flex" id="part1">
+                    <div class="esq">
+                        <img id="imagem" src="detalhes/salada.png" alt="">
+                    </div>
+                    <div class="dir">
+                        <p>Apesar de todos os avanços tecnológicos presentes no mundo, o mundo ainda vivencia a problemática da fome de uma maneira extremamente grave, e, dentre os países que estão inseridos no Mapa da Fome, se encontra o Brasil.
+                        <br>
+                        <br>
+                        Desde a sua colonização, o Brasil é marcado por um histórico de lutas contra a fome, desigualdades sociais e insegurança alimentar. especialmente após 1930, onde a escassez e as más condições de vida foram intensificadas pela falta de políticas públicas.
+                        <br>
+                        <br>
+                        Na sociedade atual contemporânea, a desigualdade social afeta diretamente no modo de alimentação das pessoas. Segundo uma pesquisa da Gênero e Número, revela-se que a desigualdade de renda, de gênero e de raça são um dos principais fatores ligado as causas da insegurança alimentar no Brasil.
+                        </p>
+                    </div>                                     
+                 </div>
+                </div>
+            </div>
+
+            <div class="flex" id="part2">
+                <img src="img/2.png" alt="">
+                <img src="img/3.png" alt="">
+            </div>
+        </section>
+
+        <section class="frase">
+            <marquee direction="left">O padrão sempre se repete e a fome sempre nos cerca</marquee>
+        </section>
+
+        <section class="cor-gen">
+            <div class="interface">
+                <div class="logo">
+                    <div class="flex">
+                        <h2>A FOME TEM <br> COR E GÊNERO</h2>
+                        <img src="detalhes/protesto.png" alt="">
+                    </div>
+                </div>
+                <div class="cont">
+                    <div class="flex">
+                        <p>A desigualdade de gênero é uma grande causa da insegurança alimentar entre as mulheres que, muitas vezes, têm acesso limitado a recursos econômicos, incluindo emprego formal e salários justos. Essa desigualdade econômica as coloca em desvantagem ao tentar garantir uma alimentação adequada.</p>
+
+                        <p>No Brasil, as famílias chefiadas por mulheres são as mais desprovidas de recursos. Entre essas famílias, as lideradas por mulheres negras e indígenas são ainda mais pobres. Diante desses desafios complexos, é importante implementar políticas e programas que abordem as causas subjacentes da insegurança alimentar entre as mulheres no Brasil.</p>
+                    </div>
+
+                    <div id="grafico-cg">
+                        <canvas style="width: 300px; height: 300px;" id="grafico-cor_e_gen"></canvas>
+                    </div>
+                   
+                </div> 
+            </div>
+        </section>
+
+        <section class="escola">
+            <div class="interface">
+                <div class="logo">
+                    <div class="flex">
+                        <i class="bi bi-book"></i>
+                        <h2>A FOME TEM GRAU <br> DE ESCOLARIDADE</h2>
+                    </div>
+                </div>
+                <div class="cont">
+                    <div class="flex">
+                        <p>Segundo os dados levantados pela pesquisa da Rede Brasileira de Pesquisa em Soberania e Segurança Alimentar e Nutricional (Penssan), quanto menor for o grau de escolaridade, maior é a probabilidade de insegurança alimentar nos domicílios.</p>
+
+                        <p>Há fome em 22,3% dos domicílios com responsáveis com 4 anos ou menos de estudo. Em 2020 esse percentual era de 14,9%. O maior percentual de segurança alimentar é em domicílios cujos responsáveis têm mais de 8 anos de estudo: 50,6%.</p>
+                    </div>
+                </div>
+                <div class="flex" id="graficos-escola">
+
+                    <div>
+                        <canvas style="height: 300px; width: 300px;" id="grafico-escola_mais8"></canvas>
+                    </div>
+
+                    <div>
+                        <canvas style="height: 300px; width: 300px;" id="grafico-escola_menos8"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="desemprego">
+            <div class="interface">
+                <div class="logo">
+                    <div class="flex">
+                        <h2>A FOME TEM <br> DESEMPREGO</h2>
+                        <img src="detalhes/mala-de-viagem.png" alt="">
+                    </div>
+                </div>
+                <div class="cont">
+                    <div class="flex">
+                        <p>A fome e o desemprego têm colocado diversas famílias em situação de vulnerabilidade e ajudado a ressaltar a a desigualdade que há na atual sociedade brasileira. Com isso, quando se olha para o desemprego que se arrasta por mais de dois anos, os trabalhadores negros acabam figurando entre os maiores números.</p>
+                        <p>A  posição de um trabalhador no mercado de trabalho, muitas vezes, serve como um resumo das barreiras e dificuldades que os mesmos tem que enfrentar durante a sua vida, na qual, a falta de acesso a uma boa educação e a alimentos inadequados acaba se perpetuando no histórico da família.</p>
+                    </div>
+                </div>
+
+                <div class="flex" id="graficos-des">
+                    <div>
+                        <canvas style="height: 300px; width: 300px;" id="grafico-emprego"></canvas> 
+                    </div>
+                    <div>
+                        <canvas style="height: 300px; width: 300px;" id="grafico-desemprego"></canvas> 
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="preço">
+            <div class="interface">
+                <div class="logo">
+                    <div class="flex">
+                        <i class="bi bi-cash-coin"></i>
+                        <h2>A FOME <br> TEM PREÇO</h2>
+                    </div>
+                </div>
+                <div class="cont">
+                    <p>O Salário Mínimo foi instituido no Brasil em 1936, na qual ele tinha o objetivo de suprir as necessidades básicas do trabalhador e sua família, as quais dizem respeito à alimentação, vestuário, habitação, higiene e transporte. Porem, se observar o cenário atual brasileiro, o salário minimo não cumpre com o que foi proposto,  deixando muitos trabalhadores e suas famílias em condições desumanas de vivência. Correlacionando o salário minimo e a sua alimentação, pode-se notar que a maior parte de suas famílias passam por situação de insegurança alimentar devido a insuficiencia de renda, e, cada vez mais que os anos vão passando, mais os brasileiros vão perdendo o poder de compra.</p>
+                </div>
+            
+                <div class="flex" id="graficos-preço">
+                    <div>
+                        <canvas style="height: 300px; width: 300px;" id="grafico-preço_inferior"></canvas>
+                    </div>
+                    <div>
+                        <canvas style="height: 300px; width: 300px;" id="grafico-preço_superior" ></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="flex" id="flex-mobile">
+                <nav class="menu-simplificado">
+                    <h2>Menu <span>----------</span></h2>
+                    <ul>
+                        <li>
+                            <a href="index.html">Página Inicial</a>
+                        </li>
+                        <li>
+                            <a href="sobre.html">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="governo.html">Ações governamentais</a>
+                        </li>
+                        <li>
+                            <a href="rj.html">A fome no Rio</a>
+                        </li>
+                        <li>
+                            <a href="solidarity.html">Projeto solidário</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="ref">
+                    <h2>Links úteis <span>----------</span></h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.brasildefato.com.br/2022/03/06/o-brasil-e-a-escassez-o-que-os-momentos-historicos-de-carestia-nos-ensinam/" target="_blank">História | Brasil de Fato</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="slogan">
+                    <img src="detalhes/1.png" alt="">
+                    <h3>A REALIDADE CONTADA</h3>
+                </div>
+            </div>
+
+            <h4>© Copyright 2024 | Comida na Mesa</h4>
+
+        </div>    
+    </footer>
+</body>
+</html>
